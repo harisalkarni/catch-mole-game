@@ -1,0 +1,45 @@
+body{
+  background-color: rgb(100, 100, 100);
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.scoreboard {
+  margin-bottom: 20px;
+}
+
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 10px;
+  justify-content: center;
+}
+
+.hole {
+  width: 100px;
+  height: 100px;
+  background-color: #ccc;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+
+.hole.mole {
+  background: url("./assets/mole.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.main-btn{
+  margin-top: 1rem;
+}
